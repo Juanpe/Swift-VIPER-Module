@@ -7,8 +7,10 @@ Xcode templates for VIPER Architecture in Swift
 
 ## Generated code
 
+Template generated all files that you need to create a new module follow VIPER architecture. All generated code is Swift 3.
+
 **Protocols**
-```
+```swift
 //MARK: Wireframe -
 protocol LoginWireframeProtocol: class {
 
@@ -32,7 +34,7 @@ protocol LoginViewProtocol: class {
 ```
 
 **Interactor**
-```
+```swift
 class LoginInteractor: LoginInteractorProtocol {
 
     weak var presenter: LoginPresenterProtocol!
@@ -40,7 +42,7 @@ class LoginInteractor: LoginInteractorProtocol {
 ```
 
 **Presenter**
-```
+```swift
 class LoginPresenter: LoginPresenterProtocol {
 
     weak private var view: LoginViewProtocol?
@@ -58,14 +60,14 @@ class LoginPresenter: LoginPresenterProtocol {
 ```
 
 **Wireframe**
-```
+```swift
 class LoginRouter: LoginWireframeProtocol {
 
 }
 ```
 
 **View**
-```
+```swift
 class LoginViewController: UIViewController, LoginViewProtocol {
 
 	var presenter: LoginPresenterProtocol!
