@@ -7,7 +7,7 @@ Xcode templates for VIPER Architecture in Swift
 
 ## Generated code
 
-Template generated all files that you need to create a new module follow VIPER architecture. All generated code is Swift 3.
+This template generates all files that you need to create a new VIPER module. All generated code is Swift 3.
 
 **Protocols**
 ```swift
@@ -77,3 +77,8 @@ class LoginViewController: UIViewController, LoginViewProtocol {
     }
 }
 ```
+## Contributed
+This is an open source project, so feel free to contribute. How?
+- Open an [issue](https://github.com/Juanpe/Swift-VIPER-Module/issues/new).
+- Send feedback via [email](mailto://juanpecatalan.com).
+- Propose your own fixes, suggestions and open a pull request with the changes.
