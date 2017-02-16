@@ -1,6 +1,6 @@
-![](http://juanpecatalan.com/JuanpeCatalan/SwiftViperModule/logo.png)
+![](http://juanpecatalan.com/SwiftViperModule/logo.png)
 
 # Swift-VIPER-Module
 Xcode templates for VIPER Architecture in Swift
 
-![Preview](http://juanpecatalan.com/JuanpeCatalan/SwiftViperModule/demoViper.gif)
+![Preview](http://juanpecatalan.com/SwiftViperModule/demoViper.gif)
