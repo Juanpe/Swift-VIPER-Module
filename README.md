@@ -1,14 +1,18 @@
 ![](assets/header.jpg)
 
-## Very easy to use
-![Preview](/assets/demoviper.gif)
+When you decide to use VIPER architecture in your project, it is very tired create new modules, because you need create al least 5 files for each. Imagine that you need to create 6 modules...I was suffering this problem, and this is the raison why I've created this template. It's very useful for me and I hope that for you too.
 
 ## How to install
 Go to Application folder, browse to the Xcode application icon. Right-click it and choose 'Show Package Contents'. Then browse to:
-Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/Project Templates/iOS/Application and add "Module VIPER.xctemplate" file. Now you can find your template in Xcode.
+`Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/Project Templates/iOS/Application` and add "Module VIPER.xctemplate" file. Now you can find your template in Xcode.
+
+## Easy to use
+![Preview](/assets/demoviper.gif)
 
 ## Generated code
 This template generates all files that you need to create a new VIPER module. All generated code is Swift 3.
+
+This is an example, we're creating a Login module:
 
 **Protocols**
 ```swift
