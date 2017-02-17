@@ -28,13 +28,13 @@ protocol LoginPresenterProtocol: class {
 //MARK: Interactor -
 protocol LoginInteractorProtocol: class {
 
-  var presenter: LoginPresenterProtocol!  { get set }
+  var presenter: LoginPresenterProtocol?  { get set }
 }
 
 //MARK: View -
 protocol LoginViewProtocol: class {
 
-  var presenter: LoginPresenterProtocol!  { get set }
+  var presenter: LoginPresenterProtocol?  { get set }
 }
 ```
 
@@ -42,7 +42,7 @@ protocol LoginViewProtocol: class {
 ```swift
 class LoginInteractor: LoginInteractorProtocol {
 
-    weak var presenter: LoginPresenterProtocol!
+    weak var presenter: LoginPresenterProtocol?
 }
 ```
 
@@ -75,7 +75,7 @@ class LoginRouter: LoginWireframeProtocol {
 ```swift
 class LoginViewController: UIViewController, LoginViewProtocol {
 
-	var presenter: LoginPresenterProtocol!
+	var presenter: LoginPresenterProtocol?
 
 	override func viewDidLoad() {
         super.viewDidLoad()
