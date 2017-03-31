@@ -122,6 +122,9 @@ After using VIPER, I've found it to be very beneficial in many ways. Let’s get
 - Spec-ability
 
 ## Next steps
+
+Would you like decide what will be the next feature? now, you can do it [here](https://goo.gl/forms/8SrF30p7ort0hCio2)
+
 * [x] Create bash script to install more easy
 * [ ] Add Dependency Injection Framework
 * [ ] Divide Interactor protocol (Input & Output)
