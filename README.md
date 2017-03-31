@@ -83,7 +83,7 @@ class LoginRouter: LoginWireframeProtocol {
 
     weak var viewController: UIViewController?
 
-    static func createLoginModule() -> UIViewController {
+    static func createModule() -> UIViewController {
         
         let view = LoginViewController(nibName: nil, bundle: nil)
         let interactor = LoginInteractor()
@@ -123,9 +123,9 @@ After using VIPER, I've found it to be very beneficial in many ways. Let’s get
 
 ## Next steps
 * [x] Create bash script to install more easy
-* [ ] ~~Create groups in template~~ *(Only available for Project templates)*
 * [ ] Add Dependency Injection Framework
 * [ ] Divide Interactor protocol (Input & Output)
+* [ ] ~~Create groups in template~~ *(Only available for Project templates)*
 
 ## References
 - [iOS Architecture Patterns](https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52#.ba7q8dcih)
