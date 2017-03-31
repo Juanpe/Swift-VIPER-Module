@@ -14,7 +14,7 @@ class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___Wirefr
     
     weak var viewController: UIViewController?
     
-    static func createModule() -> UIViewController {
+    static func create___FILEBASENAMEASIDENTIFIER___Module() -> UIViewController {
         // Change to get view from storyboard if not using progammatic UI
         let view = ___FILEBASENAMEASIDENTIFIER___ViewController()
         let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
