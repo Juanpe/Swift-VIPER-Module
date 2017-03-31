@@ -81,6 +81,21 @@ class LoginPresenter: LoginPresenterProtocol {
 ```swift
 class LoginRouter: LoginWireframeProtocol {
 
+    weak var viewController: UIViewController?
+
+    static func createLoginModule() -> UIViewController {
+        
+        let view = LoginViewController(nibName: nil, bundle: nil)
+        let interactor = LoginInteractor()
+        let router = LoginRouter()
+        let presenter = LoginPresenter(interface: view, interactor: interactor, router: router)
+
+        view.presenter = presenter
+        interactor.presenter = presenter
+        router.viewController = view
+
+        return view
+    }
 }
 ```
 
