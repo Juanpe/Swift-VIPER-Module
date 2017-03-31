@@ -125,6 +125,7 @@ After using VIPER, I've found it to be very beneficial in many ways. Let’s get
 * [x] Create bash script to install more easy
 * [ ] ~~Create groups in template~~ *(Only available for Project templates)*
 * [ ] Add Dependency Injection Framework
+* [ ] Divide Interactor protocol (Input & Output)
 
 ## References
 - [iOS Architecture Patterns](https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52#.ba7q8dcih)
