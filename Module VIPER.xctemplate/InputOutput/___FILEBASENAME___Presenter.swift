@@ -10,7 +10,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol,___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol {
+class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol, ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol {
 
     weak private var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol?
     var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol?
