@@ -10,18 +10,16 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol {
+class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol,___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol {
 
     weak private var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol?
-    private let interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol
+    var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol?
     private let router: ___FILEBASENAMEASIDENTIFIER___WireframeProtocol
 
-    init(interface: ___FILEBASENAMEASIDENTIFIER___ViewProtocol, interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol, router: ___FILEBASENAMEASIDENTIFIER___WireframeProtocol) {
+    init(interface: ___FILEBASENAMEASIDENTIFIER___ViewProtocol, interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol?, router: ___FILEBASENAMEASIDENTIFIER___WireframeProtocol) {
         self.view = interface
         self.interactor = interactor
         self.router = router
-
-        self.interactor.presenter = self
     }
 
 }

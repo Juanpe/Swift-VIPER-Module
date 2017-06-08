@@ -26,17 +26,17 @@ func moveTemplate(){
         
             try fileManager.copyItem(atPath: templateName, toPath: "\(destinationPath)/\(templateName)")
             
-            printInConsole("Template installed succesfully. Enjoy it :)")
+            printInConsole(" ✅  Template installed succesfully 🎉. Enjoy it 🙂")
             
         }else{
             
             try _ = fileManager.replaceItemAt(URL(fileURLWithPath:"\(destinationPath)/\(templateName)"), withItemAt: URL(fileURLWithPath:templateName))
             
-            printInConsole("Template already exists. So has been replaced succesfully. Enjoy it :)")
+            printInConsole(" ✅  Template already exists. So has been replaced succesfully 🎉. Enjoy it 🙂")
         }
     }
     catch let error as NSError {
-        printInConsole("Ooops! Something went wrong: \(error.localizedFailureReason!)")
+        printInConsole(" ❌  Ooops! Something went wrong 😡: \(error.localizedFailureReason!)")
     }
 }
 
