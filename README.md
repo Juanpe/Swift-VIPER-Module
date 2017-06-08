@@ -47,7 +47,7 @@ Would you like decide what will be the next feature? now, you can do it [here](h
 
 * [x] Create bash script to install more easy
 * [ ] Add Dependency Injection Framework
-* [x] Divide Interactor protocol (Input & Output)
+* [x] Divide Interactor protocol (Input & Output) (NEW! Version 1.1)
 * [ ] ~~Create groups in template~~ *(Only available for Project templates)*
 
 ## References
