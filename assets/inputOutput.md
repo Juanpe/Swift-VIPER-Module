@@ -9,28 +9,28 @@ protocol LoginWireframeProtocol: class {
 //MARK: Presenter -
 protocol LoginPresenterProtocol: class {
 
-var interactor: LoginInteractorInputProtocol? { get set }
+    var interactor: LoginInteractorInputProtocol? { get set }
 }
 
 //MARK: Interactor -
 protocol LoginInteractorOutputProtocol: class {
 
-/* Interactor -> Presenter */
+    /* Interactor -> Presenter */
 }
 
 protocol LoginInteractorInputProtocol: class {
 
-var presenter: LoginInteractorOutputProtocol?  { get set }
+    var presenter: LoginInteractorOutputProtocol?  { get set }
 
-/* Presenter -> Interactor */
+    /* Presenter -> Interactor */
 }
 
 //MARK: View -
 protocol LoginViewProtocol: class {
 
-var presenter: LoginPresenterProtocol?  { get set }
+    var presenter: LoginPresenterProtocol?  { get set }
 
-/* Presenter -> ViewController */
+    /* Presenter -> ViewController */
 }
 ```
 
@@ -38,7 +38,7 @@ var presenter: LoginPresenterProtocol?  { get set }
 ```swift
 class LoginInteractor: LoginInteractorInputProtocol {
 
-weak var presenter: LoginInteractorOutputProtocol?
+    weak var presenter: LoginInteractorOutputProtocol?
 }
 ```
 
@@ -46,15 +46,15 @@ weak var presenter: LoginInteractorOutputProtocol?
 ```swift
 class LoginPresenter: LoginPresenterProtocol, LoginInteractorOutputProtocol {
 
-weak private var view: LoginViewProtocol?
-var interactor: LoginInteractorInputProtocol?
-private let router: LoginWireframeProtocol
+    weak private var view: LoginViewProtocol?
+    var interactor: LoginInteractorInputProtocol?
+    private let router: LoginWireframeProtocol
 
-init(interface: LoginViewProtocol, interactor: LoginInteractorInputProtocol?, router: LoginWireframeProtocol) {
-self.view = interface
-self.interactor = interactor
-self.router = router
-}
+    init(interface: LoginViewProtocol, interactor: LoginInteractorInputProtocol?, router: LoginWireframeProtocol) {
+        self.view = interface
+        self.interactor = interactor
+        self.router = router
+    }
 }
 ```
 
@@ -62,21 +62,21 @@ self.router = router
 ```swift
 class LoginRouter: LoginWireframeProtocol {
 
-weak var viewController: UIViewController?
+    weak var viewController: UIViewController?
 
-static func createModule() -> UIViewController {
-// Change to get view from storyboard if not using progammatic UI
-let view = LoginViewController(nibName: nil, bundle: nil)
-let interactor = LoginInteractor()
-let router = LoginRouter()
-let presenter = LoginPresenter(interface: view, interactor: interactor, router: router)
+    static func createModule() -> UIViewController {
+        
+        let view = LoginViewController(nibName: nil, bundle: nil)
+        let interactor = LoginInteractor()
+        let router = LoginRouter()
+        let presenter = LoginPresenter(interface: view, interactor: interactor, router: router)
 
-view.presenter = presenter
-interactor.presenter = presenter
-router.viewController = view
+        view.presenter = presenter
+        interactor.presenter = presenter
+        router.viewController = view
 
-return view
-}
+        return view
+    }
 }
 
 ```
@@ -85,10 +85,10 @@ return view
 ```swift
 class LoginViewController: UIViewController, LoginViewProtocol {
 
-var presenter: LoginPresenterProtocol?
+    var presenter: LoginPresenterProtocol?
 
-override func viewDidLoad() {
-super.viewDidLoad()
-}
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
 ```

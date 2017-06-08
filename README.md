@@ -27,8 +27,8 @@ This template generates all files that you need to create a new VIPER module. Al
 
 This is an example, we're creating a Login module:
 
-- ![Default, without divide](/assets/defaultOutput.md)
-- ![With divided Interactor (Input & Output)](/assets/inputOutput.md)
+- [Default, without divide](/assets/defaultOutput.md)
+- [With divided Interactor (Input & Output)](/assets/inputOutput.md)
 
 ## VIPER diagram overview
 ![Preview](/assets/viper_diagram.png)
