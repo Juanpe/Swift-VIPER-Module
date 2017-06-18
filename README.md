@@ -20,7 +20,7 @@ Go to Application folder, browse to the Xcode application icon. Right-click it a
 `Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/Project Templates/iOS/Application` and add "Module VIPER.xctemplate" file. Now you can find your template in Xcode.
 
 ## Easy to use
-![](/assets/wizard.png | width=400)
+![](/assets/wizard.png =400x)
 
 ## Generated code
 This template generates all files that you need to create a new VIPER module. All generated code is Swift 3.
