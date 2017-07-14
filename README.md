@@ -46,8 +46,9 @@ After using VIPER, I've found it to be very beneficial in many ways. Let’s get
 Would you like decide what will be the next feature? now, you can do it [here](https://goo.gl/forms/8SrF30p7ort0hCio2)
 
 * [x] Create bash script to install more easy
-* [ ] Add Dependency Injection Framework
 * [x] Divide Interactor protocol (Input & Output) (**NEW!** Version 1.1)
+* [ ] Add Dependency Injection Framework
+* [ ] Customize name of components
 * [ ] ~~Create groups in template~~ *(Only available for Project templates)*
 
 ## References
