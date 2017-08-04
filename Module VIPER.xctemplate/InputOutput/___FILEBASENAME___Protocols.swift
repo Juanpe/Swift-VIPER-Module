@@ -28,7 +28,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol: class {
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol: class {
 
-    var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol?  { get set }
+    var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol? { get set }
 
     /* Presenter -> Interactor */
 }
@@ -36,7 +36,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol: class {
 //MARK: View -
 protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
 
-    var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol?  { get set }
+    var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol? { get set }
 
     /* Presenter -> ViewController */
 }
