@@ -47,6 +47,7 @@ Would you like decide what will be the next feature? now, you can do it [here](h
 
 * [x] Create bash script to install more easy
 * [x] Divide Interactor protocol (Input & Output) (**NEW!** Version 1.1)
+* [x] Swift 4 & XCode 9 (**NEW!** Version 1.2)
 * [ ] Add Dependency Injection Framework
 * [ ] Customize name of components
 * [ ] ~~Create groups in template~~ *(Only available for Project templates)*

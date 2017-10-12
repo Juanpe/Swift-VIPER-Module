@@ -11,22 +11,22 @@
 import Foundation
 
 //MARK: Wireframe -
-protocol ___FILEBASENAMEASIDENTIFIER___WireframeProtocol: class {
+protocol ___VARIABLE_productName:identifier___WireframeProtocol: class {
 
 }
 //MARK: Presenter -
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol: class {
+protocol ___VARIABLE_productName:identifier___PresenterProtocol: class {
 
 }
 
 //MARK: Interactor -
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorProtocol: class {
+protocol ___VARIABLE_productName:identifier___InteractorProtocol: class {
 
-  var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol?  { get set }
+  var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?  { get set }
 }
 
 //MARK: View -
-protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
+protocol ___VARIABLE_productName:identifier___ViewProtocol: class {
 
-  var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol?  { get set }
+  var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?  { get set }
 }
