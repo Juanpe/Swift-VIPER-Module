@@ -55,7 +55,7 @@ func shell(launchPath: String, arguments: [String]) -> String
     if output.characters.count > 0 {
         //remove newline character.
         let lastIndex = output.index(before: output.endIndex)
-        return output[output.startIndex ..< lastIndex]
+        return String(output[output.startIndex ..< lastIndex])
     }
     return output
 }
