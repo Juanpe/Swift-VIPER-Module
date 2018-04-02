@@ -15,7 +15,7 @@ class ___VARIABLE_productName:identifier___ViewController: UIViewController, ___
 	var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
 
 	override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+            super.viewDidLoad()
+    	}
 
 }
