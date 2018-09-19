@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___VARIABLE_productName:identifier___ViewController: UIViewController, ___VARIABLE_productName:identifier___ViewProtocol
+class ___VARIABLE_productName:identifier___ViewController: UIViewController, ___VARIABLE_productName:identifier___ViewType
 {
     // MARK: - Presenter
     
@@ -20,6 +20,8 @@ class ___VARIABLE_productName:identifier___ViewController: UIViewController, ___
         presenter: ___VARIABLE_productName:identifier___PresenterType)
     {
         self.presenter = presenter
+        
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder)

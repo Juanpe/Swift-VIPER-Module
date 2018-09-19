@@ -12,12 +12,12 @@ class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:id
 {
     // MARK: - Router
     
-    let router: ___VARIABLE_productName:identifier___Type
+    let router: ___VARIABLE_productName:identifier___RouterType
     
     // MARK: - Initializer
     
     required init(
-        router: ___VARIABLE_productName:identifier___Type)
+        router: ___VARIABLE_productName:identifier___RouterType)
     {
         self.router = router
     }
