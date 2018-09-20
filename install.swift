@@ -52,10 +52,10 @@ func shell(launchPath: String, arguments: [String]) -> String
     
     let data = pipe.fileHandleForReading.readDataToEndOfFile()
     let output = String(data: data, encoding: String.Encoding.utf8)!
-    if output.characters.count > 0 {
+    if output.count > 0 {
         //remove newline character.
         let lastIndex = output.index(before: output.endIndex)
-        return output[output.startIndex ..< lastIndex]
+        return String(output[output.startIndex ..< lastIndex])
     }
     return output
 }

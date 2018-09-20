@@ -11,32 +11,32 @@
 import Foundation
 
 //MARK: Wireframe -
-protocol ___FILEBASENAMEASIDENTIFIER___WireframeProtocol: class {
+protocol ___VARIABLE_productName:identifier___WireframeProtocol: class {
 
 }
 //MARK: Presenter -
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol: class {
+protocol ___VARIABLE_productName:identifier___PresenterProtocol: class {
 
-    var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol? { get set }
+    var interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol? { get set }
 }
 
 //MARK: Interactor -
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol: class {
+protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol: class {
 
     /* Interactor -> Presenter */
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol: class {
+protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: class {
 
-    var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol?  { get set }
+    var presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol?  { get set }
 
     /* Presenter -> Interactor */
 }
 
 //MARK: View -
-protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
+protocol ___VARIABLE_productName:identifier___ViewProtocol: class {
 
-    var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol?  { get set }
+    var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?  { get set }
 
     /* Presenter -> ViewController */
 }

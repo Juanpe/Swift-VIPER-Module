@@ -10,7 +10,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol {
+class ___VARIABLE_productName:identifier___Interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol {
 
-    weak var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol?
+    weak var presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol?
 }

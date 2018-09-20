@@ -20,7 +20,7 @@ Go to Application folder, browse to the Xcode application icon. Right-click it a
 `Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/Project Templates/iOS/Application` and add "Module VIPER.xctemplate" file. Now you can find your template in Xcode.
 
 ## Easy to use
-![Preview](/assets/demoviper.gif)
+![](/assets/wizard.png)
 
 ## Generated code
 This template generates all files that you need to create a new VIPER module. All generated code is Swift 3.
@@ -46,8 +46,10 @@ After using VIPER, I've found it to be very beneficial in many ways. Let’s get
 Would you like decide what will be the next feature? now, you can do it [here](https://goo.gl/forms/8SrF30p7ort0hCio2)
 
 * [x] Create bash script to install more easy
-* [ ] Add Dependency Injection Framework
 * [x] Divide Interactor protocol (Input & Output) (**NEW!** Version 1.1)
+* [x] Swift 4 & XCode 9 (**NEW!** Version 1.2)
+* [ ] Add Dependency Injection Framework
+* [ ] Customize name of components
 * [ ] ~~Create groups in template~~ *(Only available for Project templates)*
 
 ## References
