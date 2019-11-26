@@ -13,12 +13,18 @@ import UIKit
 class ___VARIABLE_productName:identifier___Router: ___VARIABLE_productName:identifier___WireframeProtocol {
     
     weak var viewController: UIViewController?
+    let serviceLocator: ServiceLocator
     
-    static func createModule() -> UIViewController {
+    init(_ serviceLocator: ServiceLocator) {
+        self.serviceLocator = serviceLocator
+    }
+    
+    
+    static func createModule(serviceLocator: ServiceLocator) -> UIViewController {
         // Change to get view from storyboard if not using progammatic UI
         let view = ___VARIABLE_productName:identifier___ViewController(nibName: nil, bundle: nil)
         let interactor = ___VARIABLE_productName:identifier___Interactor()
-        let router = ___VARIABLE_productName:identifier___Router()
+        let router = ___VARIABLE_productName:identifier___Router(serviceLocator)
         let presenter = ___VARIABLE_productName:identifier___Presenter(interface: view, interactor: interactor, router: router)
         
         view.presenter = presenter

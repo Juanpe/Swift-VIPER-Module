@@ -30,6 +30,15 @@ This is an example, we're creating a Login module:
 - [Default, without divide](/assets/defaultOutput.md)
 - [With divided Interactor (Input & Output)](/assets/inputOutput.md)
 
+## Depedendency injection
+
+The `createModule` method of `Router` class receives a `ServiceLocator` object as argument. This object provides all the dependencies of the app and will be used to provides dependencies of the module.
+
+In this way, the service locator object is passed between modules. 
+
+An example of ServiceLocator implementation can be found [here](DependencyInjection/ServiceLocatorImpl.swift)
+
+
 ## VIPER diagram overview
 ![Preview](/assets/viper_diagram.png)
 
@@ -48,7 +57,7 @@ Would you like decide what will be the next feature? now, you can do it [here](h
 * [x] Create bash script to install more easy
 * [x] Divide Interactor protocol (Input & Output) (**NEW!** Version 1.1)
 * [x] Swift 4 & XCode 9 (**NEW!** Version 1.2)
-* [ ] Add Dependency Injection Framework
+* [x] Add Dependency Injection Framework (**NEW!**  Service locator added)
 * [ ] Customize name of components
 * [ ] ~~Create groups in template~~ *(Only available for Project templates)*
 
