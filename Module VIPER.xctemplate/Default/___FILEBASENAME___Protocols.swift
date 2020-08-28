@@ -10,22 +10,22 @@
 
 import Foundation
 
-//MARK: Wireframe -
+//MARK: - Wireframe
 protocol ___VARIABLE_productName:identifier___WireframeProtocol: class {
 
 }
-//MARK: Presenter -
+//MARK: - Presenter
 protocol ___VARIABLE_productName:identifier___PresenterProtocol: class {
 
 }
 
-//MARK: Interactor -
+//MARK: - Interactor
 protocol ___VARIABLE_productName:identifier___InteractorProtocol: class {
 
   var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?  { get set }
 }
 
-//MARK: View -
+//MARK: - View
 protocol ___VARIABLE_productName:identifier___ViewProtocol: class {
 
   var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?  { get set }
